@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background: url(img/bg.png);
+    background-repeat: no-repeat;
+    background-size: 90% 90%;
+    background-position: 100px 60px;
+}
+header{
+    height: 20vh;
+    padding: 30px 0;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header h2{
+    color: #6f60e1;
+}
+header h2 span{
+    color: #000;
+}
+header ul{
+    list-style: none;
+}
+header ul li{
+    display: inline;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+header .container i{
+    display: none;
+    font-size: 22px;
+}
+section h1{
+    font-size: 66px;
+    margin-top: 90px;
+}
+section p{
+    padding: 15px 0;
+    width: 400px;
+    font-size: 18px;
+    color: rgb(75,75,75);
+    margin: 20px 0;
+}
+section button{
+    background-color: #6f60e1;
+    color: #fff;
+    border-radius: 5px;
+    border: 0;
+    padding: 15px 30px;
+}
+@media  screen and (max-width:1240px) and (min-width:1040px) {
+    .container{
+        width: 1000px;
+    }
+}
+@media screen and (max-width:1040px) and (min-width:840px) {
+    .container{
+        width: 800px;
+    }   
+}
+@media screen and (max-width:840px) and (min-width:600px) {
+    body{
+        background: url(img/bgsmallsize.png);
+        background-repeat: no-repeat;
+        background-size: 80%;
+        background-position: 80px 100px;
+    }
+    header .container{
+        display: block;
+    }
+    .container{
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    ul{
+        display: none;
+    }
+    section h1{
+        margin-top:240px;
+    }
+}
+@media screen and (max-width:600px) {
+    body{
+        background: url(img/bgsmallsize.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: 10px 60px;
+    }
+    .container{
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    header .container i{
+        display: block;
+    }
+    ul{
+        display: none;
+    }
+    section h1{
+        margin-top: 280px;
+    }    
+}
